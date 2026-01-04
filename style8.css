@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 1920px;
+    height: 568px;
+
+}
+
+.container_second {
+    background-color:cornflowerblue;
+}
+
+.content {
+    border: 1px solid #EBEBF0;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 30px 50px;
+}
+
+.wrapper__icon {
+    width: 36px;
+}
+
+.content__text {
+    width: 188px;
+    margin: 20px 0 0;
+}
+
+.content_center {
+    background-color: #EBEBF0;
+}
+
