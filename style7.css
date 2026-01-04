@@ -53,8 +53,17 @@ main {
     margin-bottom: 30px;
 }
 
+.title_white {
+    color: #485C46;
+    margin-bottom: 25px;
+}
+
 .text {
     margin-bottom: 30px;
+}
+
+.text_green {
+    max-width: 250px;
 }
 
 .text_white {
@@ -86,4 +95,3 @@ main {
     padding: 10px 16px;
     color: #485C46;
 }
-
