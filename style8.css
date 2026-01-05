@@ -1,16 +1,17 @@
-body {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.bloks {
+    margin: 200px 0;
+}
+
 .container {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    align-content: center;
-    max-width: 1920px;
-    height: 568px;
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 
@@ -20,23 +21,30 @@ body {
 
 .content {
     border: 1px solid #EBEBF0;
-    font-family: Noto Sans, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
     padding: 30px 50px;
+    flex: 0 1 288px;
 }
 
 .wrapper__icon {
     width: 36px;
+    margin-bottom: 20px;
 }
 
 .content__text {
-    width: 188px;
-    margin: 20px 0 0;
+    max-width: 188px;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .content_center {
     background-color: #EBEBF0;
+}
+
+.container_second {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 }
 
