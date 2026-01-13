@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <img src="img1.jpg" alt="Новогодний стол" loading="lazy" width="200px">
+        </div>
+
+        <div class="container"></div>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="big.jpg">
+            <source media="(min-width: 768px)" srcset="small.jpg">
+            <img src="standart.jpg" alt="Изображение">
+        </picture>
+        <figure>
+            <img src="img2.jpg" alt="Зима Питер">
+            <figcaption>Ночной Питер зимой. Фото: Cam Richards.</figcaption>
+        </figure>
+    </main>
+</body>
+</html>
