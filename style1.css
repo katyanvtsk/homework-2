@@ -1,126 +1,136 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.model__filtres {
-    max-width: 480px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.model__title {
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 500;
-    position: absolute;
-    top: 34px;
-    left: 32px;
-}
-
-.model__filter{
-    position: absolute;
-    top: 112px;
-    left: 32px;
-}
-
-.model__text {
-    text-transform: uppercase;
-    font-weight: 500;
+    font-family: Inter, sans-serif;
     font-size: 16px;
-    line-height: 100%;
-    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.model__groups {
+.buttons {
+    max-width: 648px;
+    padding: 20px;
+}
+
+.buttons__headline {
+    font-size: 48px;
+    line-height: 52px;
+    color: #1D2026;
+    margin-bottom: 25px;
+}
+
+.buttons__group {
     display: flex;
-    flex-direction: row; 
-    gap: 35px; 
+    flex-direction: column;
+    gap: 16px;
 }
 
-input[type="radio"] {
-    display: none;
+.buttons__title {
+    font-size: 20px;
+    line-height: 26px;
+    color: #1D2026;
 }
 
-.model__filter_food {
+.button-row {
     display: flex;
-    flex-direction: column; 
-    gap: 12px; 
-    position: absolute;
-    top: 202.5px;
-    left: 32px;
+    gap: 16px;
 }
 
-.model__custom-radio {
-    position: relative;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    border: 2px solid #D4D4D4;
-    background: #FFFFFF;
+.buttons__group_arrow {
+     gap: 24px; 
 }
 
-.model__custom-radio::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #463998;
-    opacity: 0;
-} 
+.buttons__group_arrow .button-row {
+    flex-direction: column;
+    gap: 24px; 
+}
 
-.model__label {
+.buttons__group_orange {
+    margin-bottom: 40px; 
+}
+
+.buttons__group_blue {
+    margin-bottom: 65px;
+}
+
+button {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.button {
+    max-width: 104px;
+    width: 100%;
+    padding: 0 24px;
+    color: #FFFFFF;
+    line-height: 48px;
+}
+
+.button:not(.button_orange-disable):not(.button_blue-disable) {
+    transform: scale(1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:not(.button_orange-disable):not(.button_blue-disable):hover {
+    transform: scale(1.05);
+}
+
+.button_orange {
+    background-color: #FF6636;
+}
+
+.button_orange:hover {
+    background-color: #CC522B;
+}
+
+.button_orange-disable {
+    background-color: #FFDDD1;
+}
+
+.button_blue {
+    background-color: #564FFD;
+}
+
+.button_blue:hover {
+    background-color: #453FCA;
+}
+
+.button_blue-disable {
+    background-color: #CDCBFE;
+}
+
+.button-arrow {
+    background-color: #FFFFFF;
+    max-width: 80px;
+    padding: 4px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
-    font-weight: 400;
     font-size: 14px;
-    color: #1c1c1c;
-    line-height: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
-.model__radio:checked+.model__label .model__custom-radio {
-    border-color: #463998;
-
+.button-arrow_green {
+    color: #23BD33;
 }
 
-.model__radio:checked+.model__label .model__custom-radio::before {
-    opacity: 1;
+
+.button-arrow_red {
+    color: #E34444;
 }
 
-.model__custom-checkbox {
-    border-radius: 50%;
-    border: 2px solid #D4D4D4;
-    display: flex;
-    align-items: center;
-    width: 26px;
-    height: 26px;
-    position: relative;
-
-    svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
+.button-arrow_green:hover {
+    border-bottom-color: #23BD33;
 }
 
-.model__checkbox:checked+ .model__label .model__custom-checkbox {
-    background: #463998;
-    border-color: #463998;
-    svg {
-        opacity: 1;
-    }
+.button-arrow_red:hover {
+    border-bottom: 1px solid #E34444;
 }
