@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 648px;
+    padding: 14px;
+}
+
+.container__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #1D2026;
+    margin-bottom: 40px;
+}
+
+.form__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 51px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.form__input {
+    max-width: 312px;
+    width: 100%;
+    padding: 12px 18px;
+    color: #1D2026;
+    border: 1px solid #E9EAF0;
+    transition: border-color 0.3s ease;
+}
+
+.form__input::placeholder {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8C94A3;
+}
+
+.form__input:hover {
+    border-color: #FFDDD1;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: #FF6636;
+    box-shadow: 0 0 0 3px rgba(255, 102, 54, 0.1);
+}
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dropdown__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dropdown__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dropdown__text {
+    line-height: 22px;
+    color: #1D2026;
+}
+
+.dropdown__item {
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    width: 312px;
+    padding: 5px 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #4E5566;
+    text-decoration: none;
+    transition:  background-color 0.3s ease;
+}
+
+.dropdown__item_disable {
+    color: #B7BAC7;
+    pointer-events: none;
+}
+
+.dropdown__item:hover {
+    background-color: #FFEEE8;
+}
+
+.dropdown__item_icon:hover {
+    color: #FF6636;
+}
+
+.dropdown__item_icon svg path {
+    transition: stroke 0.3s ease;
+}
+
+.dropdown__item_icon:hover svg path {
+    stroke: #FF6636;
+}
+
