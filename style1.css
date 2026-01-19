@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.model {
+    max-width: 480px;
+    padding: 34px 32px;
+    box-shadow: 0 4px 20px rgba(43, 43, 51, 0.2);
+    margin: 0 auto;
+}
+
+.model__filter {
+    margin-bottom: 30px;
+}
+
+.model__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.model__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.model__groups {
+    display: flex;
+    flex-direction: row; 
+    gap: 35px; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.model__filter_food {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px; 
+    margin-bottom: 0;
+}
+
+.model__custom-radio {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #D4D4D4;
+    background: #FFFFFF;
+}
+
+.model__custom-radio::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #463998;
+    opacity: 0;
+} 
+
+.model__label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1c1c1c;
+    line-height: 16px;
+}
+
+.model__radio:checked+.model__label .model__custom-radio {
+    border-color: #463998;
+
+}
+
+.model__radio:checked+.model__label .model__custom-radio::before {
+    opacity: 1;
+}
+
+.model__custom-checkbox {
+    border-radius: 50%;
+    border: 2px solid #D4D4D4;
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.model__checkbox:checked+ .model__label .model__custom-checkbox {
+    background: #463998;
+    border-color: #463998;
+    svg {
+        opacity: 1;
+    }
+}

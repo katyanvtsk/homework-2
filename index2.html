@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form class="form" action="">
+            <h3 class="form__title">будем рады <span>вашему</span> отзыву</h3>
+            <div class="form__groups">
+                <div class="form__group">
+                    <label class="form__label" for="nameSurname">Имя и Фамилия</label>
+                    <input class="form__input" type="text" name="nameSurname" id="nameSurname" placeholder="Александрa Иванова">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="city">Откуда вы</label>
+                    <input class="form__input" type="text" name="city" id="city" placeholder="Москва">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="date">Когда летали (дата)</label>
+                    <input class="form__input" type="text" name="date" id="date" placeholder="10.10.23">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="hotel">Куда летали (страна и отель)</label>
+                    <input class="form__input" type="text" name="hotel" id="hotel" placeholder="Бали, Hanging Gardens ">
+                </div>
+
+                <div class="form__feedback">
+                    <label class="form__label" for="message">Напишите отзыв</label>
+                    <textarea class="form__input form__input-text"id="message" name="message" placeholder="Текст"></textarea>
+                </div>
+            </div>
+            
+            <button class="form__button" type="submit">Отправить</button>
+        </form>
+    </main>
+</body>
+</html>
