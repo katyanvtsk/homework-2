@@ -22,7 +22,7 @@ body {
     max-width: 244px;
     margin: 0 auto 24px;
     font-size: 23px;
-    line-height: 100%;
+    line-height: 27px;
     text-transform: uppercase;
 
     span {
@@ -53,14 +53,15 @@ body {
 .form__input {
     border: 1px solid #D4D4D4;
     border-radius: 30px;
-    height: 40px;
-    padding: 0 26px;
+    padding: 11px 26px;
+    color: #A1A1A1;
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
 }
 
 .form__input::placeholder {
     font-family: Roboto, sans-serif;
-    color: #A1A1A1;
-    font-size: 16px;
     font-weight: 300;
 }
 
@@ -73,10 +74,13 @@ body {
 }
 
 .form__input-text {
-    max-width: 464px;
-    height: 200px;
+    max-width: 100%;
+    min-height: 200px;
     padding: 20px 26px;
     resize: none;
+    color: #A1A1A1;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .form__button {
@@ -89,5 +93,6 @@ body {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 10.5px 61.5px;
+    padding: 10.5px;
+    line-height: 19px;
 }

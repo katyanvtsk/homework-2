@@ -10,32 +10,29 @@ body {
     font-weight: 400;
 }
 
-.model__filtres {
+.model {
     max-width: 480px;
+    padding: 34px 32px;
+    box-shadow: 0 4px 20px rgba(43, 43, 51, 0.2);
     margin: 0 auto;
-    position: relative;
+}
+
+.model__filter {
+    margin-bottom: 30px;
 }
 
 .model__title {
     font-size: 24px;
-    line-height: 1;
+    line-height: 28px;
     font-weight: 500;
-    position: absolute;
-    top: 34px;
-    left: 32px;
-}
-
-.model__filter{
-    position: absolute;
-    top: 112px;
-    left: 32px;
+    margin-bottom: 50px;
 }
 
 .model__text {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 19px;
     margin-bottom: 15px;
 }
 
@@ -53,9 +50,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: column; 
     gap: 12px; 
-    position: absolute;
-    top: 202.5px;
-    left: 32px;
+    margin-bottom: 0;
 }
 
 .model__custom-radio {
