@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card {
+    background-color: #0F0F0F;
+    padding: 143px 15px 149px;
+}
+
+.container {
+    background: #C2B4A3;
+    max-width: 344px;
+    border-radius: 15px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+    background-position: 110% 0;
+}
+
+.img-wrapper {
+  background: url('img-1.png') no-repeat center / cover;
+  aspect-ratio: 1/1;
+  position: absolute;
+  z-index: 1;
+  max-width: 306px;
+  width: 83%;
+  top: -39%;
+  right: -29%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.content__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.content__text {
+    line-height: 1.5;
+}
+
+.button {
+    max-width: 284px;
+    width: 100%;
+    padding: 14px 20px;
+    color: #FFFFFF;
+    background-color: #1F1F1F;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400; 
+    z-index: 2;
+}
+
+.button svg {
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+/*планшет*/
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 215px 15px 252px;
+  } 
+
+  .container {
+    max-width: 994px;
+    border-radius: 20px;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .img-wrapper { 
+    max-width: 623px;
+    position: absolute;
+    top: -83%;
+    right: -7%;
+    z-index: 1;
+  }
+
+  .content {
+    gap: 16px;
+    max-width: 874px;
+    z-index: 2;
+  }
+
+  .content__title {
+    font-size: 40px;
+  }
+
+  .button {
+    max-width: 149px;
+    width: 100%;
+    padding: 18px;
+    border-radius: 12px;
+    gap: 4px;
+    font-size: 16px;
+  }
+
+  .button svg {
+    width: 24px; 
+    height: 24px; 
+}
+}
+
+
+/*десктоп*/
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 187.5px 80px;
+  }
+
+  .container {
+    max-width: 1280px;
+    border-radius: 16px;
+    padding: 80px;
+    flex-direction: row;
+    gap: 150px;
+  }
+
+  .img-wrapper {
+    max-width: 524px;
+    position: absolute;
+    top: -89%;
+    right: -2%;
+    z-index: 1;
+  }
+
+
+  .content {
+    gap: 12px;
+    max-width: 804px;
+  }
+
+  .content__title {
+     font-size: 48px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 136px;
+    padding: 18px;
+    border-radius: 8px;
+    gap: 2px;
+    font-size: 14px;
+    align-self: center;
+  }
+
+  .button svg {
+    width: 20px; 
+    height: 20px; 
+  }
+}
+
+
+
+
+/*десктоп-large*/
+@media (min-width: 1441px) {
+  body {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 214.5px 168px;
+  }
+
+  .container {
+    background-size: 623px 623px;
+    max-width: 1584px;
+    border-radius: 20px;
+    padding: 100px 142px 100px 100px;
+    flex-direction: row;
+    gap: 150px;
+  }
+
+  .img-wrapper {
+    position: absolute;
+    max-width: 623px;
+    top: -72%;
+    right: -5%;
+    z-index: 1;
+  }
+
+  .content {
+    gap: 16px;
+    max-width: 1033px;
+  }
+
+  .content__title {
+     font-size: 58px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 159px;
+    padding: 18px;
+    border-radius: 12px;
+    gap: 2px;
+    font-size: 18px;
+  }
+
+  .button svg {
+    width: 24px; 
+    height: 24px; 
+}
+}
