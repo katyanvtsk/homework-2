@@ -17,7 +17,7 @@ body {
 
 .container {
     background: #C2B4A3;
-    max-width: 344px;
+    max-width: 100%;
     border-radius: 15px;
     padding: 50px 30px;
     margin: 0 auto;
@@ -29,7 +29,7 @@ body {
     background-position: 110% 0;
 }
 
-.img-wrapper {
+.card__wrapper-img {
   background: url('img-1.png') no-repeat center / cover;
   aspect-ratio: 1/1;
   position: absolute;
@@ -40,7 +40,7 @@ body {
   right: -29%;
 }
 
-.content {
+.card__content {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -48,18 +48,18 @@ body {
     z-index: 2;
 }
 
-.content__title {
+.card__title {
     text-transform: uppercase;
     font-size: 22px;
     line-height: 1.2;
     font-weight: 500;
 }
 
-.content__text {
+.card__text {
     line-height: 1.5;
 }
 
-.button {
+.card__button {
     max-width: 284px;
     width: 100%;
     padding: 14px 20px;
@@ -77,7 +77,7 @@ body {
     z-index: 2;
 }
 
-.button svg {
+.card__button svg {
     width: 20px; 
     height: 20px;
 }
@@ -95,31 +95,30 @@ body {
   } 
 
   .container {
-    max-width: 994px;
+    max-width: 100%;
     border-radius: 20px;
     padding: 50px;
     gap: 30px;
   }
 
-  .img-wrapper { 
+  .card__wrapper-img { 
     max-width: 623px;
-    position: absolute;
     top: -83%;
     right: -7%;
     z-index: 1;
   }
 
-  .content {
+  .card__content {
     gap: 16px;
-    max-width: 874px;
+    max-width: 100%;
     z-index: 2;
   }
 
-  .content__title {
+  .card__title {
     font-size: 40px;
   }
 
-  .button {
+  .card__button {
     max-width: 149px;
     width: 100%;
     padding: 18px;
@@ -128,7 +127,7 @@ body {
     font-size: 16px;
   }
 
-  .button svg {
+  .card__button svg {
     width: 24px; 
     height: 24px; 
 }
@@ -142,7 +141,7 @@ body {
   }
 
   .card {
-    padding: 187.5px 80px;
+    padding: 187.5px 15px;
   }
 
   .container {
@@ -150,28 +149,28 @@ body {
     border-radius: 16px;
     padding: 80px;
     flex-direction: row;
+    justify-content: space-between;
     gap: 150px;
   }
 
-  .img-wrapper {
+  .card__wrapper-img {
     max-width: 524px;
-    position: absolute;
     top: -89%;
     right: -2%;
     z-index: 1;
   }
 
 
-  .content {
+  .card__content {
     gap: 12px;
     max-width: 804px;
   }
 
-  .content__title {
+  .card__title {
      font-size: 48px;
   }
 
-  .button {
+  .card__button {
     width: 100%;
     max-width: 136px;
     padding: 18px;
@@ -181,7 +180,7 @@ body {
     align-self: center;
   }
 
-  .button svg {
+  .card__button svg {
     width: 20px; 
     height: 20px; 
   }
@@ -197,11 +196,10 @@ body {
   }
 
   .card {
-    padding: 214.5px 168px;
+    padding: 214.5px 15px;
   }
 
   .container {
-    background-size: 623px 623px;
     max-width: 1584px;
     border-radius: 20px;
     padding: 100px 142px 100px 100px;
@@ -209,24 +207,23 @@ body {
     gap: 150px;
   }
 
-  .img-wrapper {
-    position: absolute;
+  .card__wrapper-img {
     max-width: 623px;
     top: -72%;
     right: -5%;
     z-index: 1;
   }
 
-  .content {
+  .card__content {
     gap: 16px;
     max-width: 1033px;
   }
 
-  .content__title {
+  .card__title {
      font-size: 58px;
   }
 
-  .button {
+  .card__button {
     width: 100%;
     max-width: 159px;
     padding: 18px;
@@ -235,7 +232,7 @@ body {
     font-size: 18px;
   }
 
-  .button svg {
+  .card__button svg {
     width: 24px; 
     height: 24px; 
 }
