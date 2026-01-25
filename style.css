@@ -5,235 +5,101 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-.card {
-    background-color: #0F0F0F;
-    padding: 143px 15px 149px;
+.plant__title {
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.plant__text {
+    line-height: 34px;
+}
+
+.plants {
+    background-color: rgba(27, 35, 22, 1);
+    padding-top: 329px;
+    padding-bottom: 519px;
 }
 
 .container {
-    background: #C2B4A3;
-    max-width: 100%;
-    border-radius: 15px;
-    padding: 50px 30px;
+    max-width: 1647px;
     margin: 0 auto;
+    padding: 0 15px;
+    overflow: visible;
+}
+
+.swiper {
+    padding-top: 122px;
+    padding-bottom: 157px;
+    position: relative;
+}
+
+
+.swiper-slide {
+    border: 3px solid #FFF;
+    border-radius: 92px;
+    min-height: 755px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 60px;
+    padding: 137px 62px 132px;
+    justify-content: flex-end;
+}
+
+
+
+.plant__img {
+    width: 877px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    left: -40px;
+    bottom: 20px;
+}
+
+
+.plant__content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    position: relative;
-    overflow: hidden;
-    background-position: 110% 0;
+    gap: 42px;
+    max-width: 699px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-.card__wrapper-img {
-  background: url('img-1.png') no-repeat center / cover;
-  aspect-ratio: 1/1;
-  position: absolute;
-  z-index: 1;
-  max-width: 306px;
-  width: 83%;
-  top: -39%;
-  right: -29%;
-}
-
-.card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    position: relative;
-    z-index: 2;
-}
-
-.card__title {
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 1.2;
-    font-weight: 500;
-}
-
-.card__text {
-    line-height: 1.5;
-}
-
-.card__button {
-    max-width: 284px;
+.plant__button {
     width: 100%;
-    padding: 14px 20px;
-    color: #FFFFFF;
-    background-color: #1F1F1F;
-    border: none;
-    border-radius: 8px;
+    max-width: 217px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    background: transparent;
+    opacity: 75%;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.plants .swiper-pagination {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 2px;
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400; 
-    z-index: 2;
+    gap: 15px;
+    bottom: 0;
 }
 
-.card__button svg {
-    width: 20px; 
-    height: 20px;
+.swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-
-
-/*планшет*/
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .card {
-    padding: 215px 15px 252px;
-  } 
-
-  .container {
-    max-width: 100%;
-    border-radius: 20px;
-    padding: 50px;
-    gap: 30px;
-  }
-
-  .card__wrapper-img { 
-    max-width: 623px;
-    top: -83%;
-    right: -7%;
-    z-index: 1;
-  }
-
-  .card__content {
-    gap: 16px;
-    max-width: 100%;
-    z-index: 2;
-  }
-
-  .card__title {
-    font-size: 40px;
-  }
-
-  .card__button {
-    max-width: 149px;
-    width: 100%;
-    padding: 18px;
-    border-radius: 12px;
-    gap: 4px;
-    font-size: 16px;
-  }
-
-  .card__button svg {
-    width: 24px; 
-    height: 24px; 
-}
+.swiper-pagination-bullet-active {
+    border-radius: 48px;
+    width: 31px;
 }
 
-
-/*десктоп*/
-@media (min-width: 1025px) {
-  body {
-    font-size: 16px;
-  }
-
-  .card {
-    padding: 187.5px 15px;
-  }
-
-  .container {
-    max-width: 1280px;
-    border-radius: 16px;
-    padding: 80px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 150px;
-  }
-
-  .card__wrapper-img {
-    max-width: 524px;
-    top: -89%;
-    right: -2%;
-    z-index: 1;
-  }
-
-
-  .card__content {
-    gap: 12px;
-    max-width: 804px;
-  }
-
-  .card__title {
-     font-size: 48px;
-  }
-
-  .card__button {
-    width: 100%;
-    max-width: 136px;
-    padding: 18px;
-    border-radius: 8px;
-    gap: 2px;
-    font-size: 14px;
-    align-self: center;
-  }
-
-  .card__button svg {
-    width: 20px; 
-    height: 20px; 
-  }
-}
-
-
-
-
-/*десктоп-large*/
-@media (min-width: 1441px) {
-  body {
-    font-size: 18px;
-  }
-
-  .card {
-    padding: 214.5px 15px;
-  }
-
-  .container {
-    max-width: 1584px;
-    border-radius: 20px;
-    padding: 100px 142px 100px 100px;
-    flex-direction: row;
-    gap: 150px;
-  }
-
-  .card__wrapper-img {
-    max-width: 623px;
-    top: -72%;
-    right: -5%;
-    z-index: 1;
-  }
-
-  .card__content {
-    gap: 16px;
-    max-width: 1033px;
-  }
-
-  .card__title {
-     font-size: 58px;
-  }
-
-  .card__button {
-    width: 100%;
-    max-width: 159px;
-    padding: 18px;
-    border-radius: 12px;
-    gap: 2px;
-    font-size: 18px;
-  }
-
-  .card__button svg {
-    width: 24px; 
-    height: 24px; 
-}
-}
