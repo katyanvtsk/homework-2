@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
     <main>
-        <div class="banner">
-            <span>Special Offer</span>
-            <h1>Enjoy 20% Off Your First Bouquet!</h1>
-            <p>Save big on your first fresh delivery.</p>
-            <button>
-                <a href="">Order Bouquet</a>
-            </button>
+        <div class="plants">
+            <div class="container">
+                <div class="swiper plants__swiper">
+                    <div class="swiper-wrapper plants__swiper-wrapper">
+                        <div class="swiper-slide plant">
+                            <img class="plant__img" src="img/img1.png" alt="Изображение">
+                            <div class="plant__content">
+                                <h3 class="plant__title">We Have Small And Best O2 Plants Collection’s</h3>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <button class="plant__button">Explore</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide plant">
+                            <img class="plant__img" src="img1.png" alt="Изображение">
+                            <div class="plant__content">
+                                <h3 class="plant__title">We Have Small And Best O2 Plants Collection’s</h3>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <button class="plant__button">Explore</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide plant">
+                            <img class="plant__img" src="img1.png" alt="Изображение">
+                            <div class="plant__content">
+                                <h3 class="plant__title">We Have Small And Best O2 Plants Collection’s</h3>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p class="plant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <button class="plant__button">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div> <!-- Пагинация (точки) -->
+                </div>
+            </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
