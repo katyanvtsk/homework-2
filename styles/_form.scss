@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+
+    &__input {
+        max-width: 195px;
+        width: 100%;
+        padding: 16px;
+        border: 1px solid rgba(231, 231, 231, 1);
+        color: rgba(57, 57, 57, 1);
+
+        @include text-style (12px, 16px, 500);
+
+        @include respond-to(tablet) {
+            max-width: 527px;
+            padding: 12px;
+            @include text-style (14px, 24px, 500);
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        background-color: rgba(1, 1, 1, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        padding: 16px;
+        @include text-style (14px, 16px, 500);
+
+
+        @include respond-to(tablet) {
+            padding: 10px;
+            @include text-style (16px, 28px, 500);
+        }
+    }
+}

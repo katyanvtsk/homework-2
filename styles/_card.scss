@@ -1,0 +1,105 @@
+.card {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
+        url('/img/background.jpg')
+        no-repeat
+        center
+        / cover
+    ;
+    padding: 72px 35px;
+
+    @include respond-to(tablet) {
+        padding: 50px 71px;
+    }
+    @include respond-to(desktop) {
+        padding: 123.5px 0;
+    }
+
+}
+
+.content {
+    color: $text-color;
+    text-align: center;
+    margin: 0 auto;
+
+    @include respond-to(tablet) {
+        max-width: 692px;
+    }
+
+    @include respond-to(desktop) {
+       max-width: 960px;
+    }
+
+
+    &__title {
+        font-family: $font-family-secondary;
+        font-size: font-size(title, mobile);
+        font-weight: $font-weigth-title;
+        font-style: italic;
+        line-height: line-height(title, mobile);
+        margin-bottom: 8px;
+
+        @include respond-to(tablet) {
+            font-size: font-size(title, tablet);
+            line-height: line-height(title, tablet);
+        }
+
+        @include respond-to(desktop) {
+            font-size: font-size(title, desktop);
+            line-height: line-height(title, desktop);
+        }
+    }
+
+    &__text {
+        font-size: font-size(text, mobile);
+        font-weight: $font-weigth-text;
+        line-height: line-height(text, mobile);
+        margin: 0 auto 24px;
+
+        @include respond-to(tablet) {
+            max-width: 380px;
+            font-size: font-size(text, tablet);
+            line-height: line-height(text, tablet);
+        }
+
+        @include respond-to(desktop) {
+            max-width: 674px;
+            font-weight: 500;
+            font-size: font-size(text, desktop);
+            line-height: line-height(text, desktop);
+        }
+    }
+
+}
+
+
+
+
+
+//desktop
+// .content {
+//     max-width: 960px;
+//     color: $text-color;
+//     text-align: center;
+//     margin: 0 auto;
+
+
+//     &__title {
+//         font-family: $font-family-title;
+//         font-size: $font-title;
+//         font-weight: $font-weigth-title;
+//         font-style: italic;
+//         line-height: 60px;
+//         margin-bottom: 8px;
+//     }
+
+//     &__text {
+//         max-width: 674px;
+//         font-size: $font-text;
+//         font-weight: $font-weigth-text;
+//         line-height: 32px;
+//         margin: 0 auto 24px;
+
+//     }
+
+// }
