@@ -1,0 +1,15 @@
+@function font-size($type, $device: mobile) {
+  @if $type == title {
+    @return map-get($font-size-title, $device);
+  } @else if $type == text {
+    @return map-get($font-size-text, $device);
+  }
+}
+
+@function line-height($type, $device: mobile) {
+  @if $type == title {
+    @return map-get($line-height-title, $device);
+  } @else if $type == text {
+    @return map-get($line-height-text, $device);
+  }
+}

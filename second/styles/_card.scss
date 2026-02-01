@@ -1,0 +1,70 @@
+.card {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
+        url('/img/background.jpg')
+        no-repeat
+        center
+        / cover
+    ;
+    padding: 64px 0;
+    text-align: center;
+
+    @include respond-to(tablet) {
+        padding: 42px 0;
+    }
+    @include respond-to(desktop) {
+        padding: 115.5px 0;
+    }
+
+    &__title {
+        font-family: $font-family-secondary;
+        font-size: font-size(title, mobile);
+        font-weight: $font-weigth-title;
+        font-style: italic;
+        line-height: line-height(title, mobile);
+        margin-bottom: 8px;
+
+        @include respond-to(tablet) {
+            font-size: font-size(title, tablet);
+            line-height: line-height(title, tablet);
+            margin-bottom: 24px;
+        }
+
+        @include respond-to(desktop) {
+            font-size: font-size(title, desktop);
+            line-height: line-height(title, desktop);
+        }
+    }
+
+    &__text {
+        font-size: font-size(text, mobile);
+        font-weight: $font-weigth-text;
+        line-height: line-height(text, mobile);
+        margin: 0 auto 24px;
+
+        @include respond-to(tablet) {
+            max-width: 380px;
+            font-size: font-size(text, tablet);
+            line-height: line-height(text, tablet);
+        }
+
+        @include respond-to(desktop) {
+            max-width: 674px;
+            font-weight: 500;
+            font-size: font-size(text, desktop);
+            line-height: line-height(text, desktop);
+        }
+    }
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+
+    @include respond-to(desktop) {
+       max-width: 1030px;
+    }
+
+}
+

@@ -1,0 +1,13 @@
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin text-style($size: 12px, $line-height: 16px, $weight: 500) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
